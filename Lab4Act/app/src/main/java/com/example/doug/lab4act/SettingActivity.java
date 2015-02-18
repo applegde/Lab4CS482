@@ -1,4 +1,5 @@
 package com.example.doug.lab4act;
+
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.ActivityNotFoundException;
@@ -57,7 +58,7 @@ public class SettingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_lab4);
 
         // Restore preferences
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
@@ -181,7 +182,7 @@ public class SettingActivity extends Activity {
             fis.close();
         } catch (IOException e) {
             // Default profile photo if no photo saved before.
-            mImageView.setImageResource(R.drawable.photo);
+            mImageView.setImageResource(R.drawable.ic_launcher);
         }
     }
 
