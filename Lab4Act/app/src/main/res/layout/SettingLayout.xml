@@ -1,0 +1,148 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/linear_layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "@string/profile_view"
+            android:id="@+id/Profile_View"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+            <ImageView
+                android:layout_width="75pt"
+                android:layout_height="75pt"
+                android:id="@+id/profile_picture"
+                android:src="@drawable/photo"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_button_change"
+                android:text="@string/button_change"
+                android:layout_toRightOf="@id/profile_picture"
+                android:layout_centerVertical="true"
+                android:onClick="onChangePictureClick"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "@string/name"
+            android:id="@+id/name_text_view"/>
+        <EditText
+            android:layout_width= "fill_parent"
+            android:layout_height= "wrap_content"
+            android:hint="@string/enter_name"
+            android:id="@+id/user_name_edit"
+            />
+        <TextView
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "@string/email"
+            android:id="@+id/email_text_view"/>
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width= "fill_parent"
+            android:layout_height= "wrap_content"
+            android:hint="@string/your_email"
+            android:id="@+id/user_email_edit"
+            />
+        <TextView
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "@string/phone"
+            android:id="@+id/phone_text_view"/>
+        <EditText
+            android:inputType="phone"
+            android:layout_width= "fill_parent"
+            android:layout_height= "wrap_content"
+            android:hint="@string/your_phone"
+            android:id="@+id/user_phone_number"
+            />
+        <TextView
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "@string/gender"
+            android:id="@+id/gender_text_view"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal"
+            android:id="@+id/user_gender_edit">
+            <RadioButton android:id="@+id/radio_pirates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"/>
+            <!--android:onClick="onRadioButtonClicked"-->
+            <RadioButton android:id="@+id/radio_ninjas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"/>
+            <!--android:onClick="onRadioButtonClicked"/> -->
+        </RadioGroup>
+
+        <TextView
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "@string/class_"
+            android:id="@+id/class_text_view"/>
+        <EditText
+            android:inputType="number"
+            android:layout_width= "fill_parent"
+            android:layout_height= "wrap_content"
+            android:hint="@string/class_hint"
+            android:id="@+id/user_class_edit"
+            />
+        <TextView
+            android:layout_width= "wrap_content"
+            android:layout_height= "wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text= "@string/major"
+            android:id="@+id/major_text_view"/>
+        <EditText
+            android:layout_width= "fill_parent"
+            android:layout_height= "wrap_content"
+            android:hint="@string/major_hint"
+            android:id="@+id/user_major_edit"
+            />
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_button_save"
+                android:text="@string/save"
+                android:onClick="onSave"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/profile_button_cancel"
+                android:layout_toRightOf="@id/profile_button_save"
+                android:text="@string/cancel"
+                android:onClick="leaveApp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
