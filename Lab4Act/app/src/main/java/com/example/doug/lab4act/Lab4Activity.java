@@ -1,17 +1,38 @@
 package com.example.doug.lab4act;
 
+import android.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.doug.lab4act.view.SlidingTabLayout;
+
+import java.util.ArrayList;
+
 
 public class Lab4Activity extends ActionBarActivity {
+
+    private SlidingTabLayout slidingTabLayout;
+    private ViewPager viewPager;
+    private ArrayList<Fragment> fragments;
+    private ActionTabsViewPagerAdapter viewPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab4);
+
+        //define sliding layout
+        slidingTabLayout = (SlidingTabLayout) findViewById(R.id.tab);
+        viewPager = (ViewPager) findViewById(R.id.viewpager);
+
+        fragments = new ArrayList<Fragment>();
+        fragments.add();
+        fragments.add();
+        fragments.add();
+
     }
 
 
