@@ -1,9 +1,9 @@
 package com.example.doug.lab4act;
 
-import android.app.Fragment;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -12,7 +12,7 @@ import com.example.doug.lab4act.view.SlidingTabLayout;
 import java.util.ArrayList;
 
 
-public class Lab4Activity extends ActionBarActivity {
+public class Lab4Activity extends FragmentActivity implements  {
 
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
