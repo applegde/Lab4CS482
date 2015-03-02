@@ -17,7 +17,7 @@ public class Lab4Activity extends ActionBarActivity {
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
     private ArrayList<Fragment> fragments;
-    private ActionTabsViewPagerAdapter viewPagerAdapter;
+    private Lab4TabsViewPagerAdapter viewPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +29,9 @@ public class Lab4Activity extends ActionBarActivity {
         viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         fragments = new ArrayList<Fragment>();
-        fragments.add();
-        fragments.add();
-        fragments.add();
+        fragments.add(new Start());
+        fragments.add(new History());
+        fragments.add(new Settings());
 
     }
 

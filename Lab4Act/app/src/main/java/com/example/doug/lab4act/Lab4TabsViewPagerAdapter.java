@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * Adapted by Douglas Applegate 3/2/2015
  */
 
-public class Lab4ViewPagerAdapter extends FragmentPagerAdapter {
+public class Lab4TabsViewPagerAdapter extends FragmentPagerAdapter {
     private ArrayList<Fragment> fragments;
 
     public static final int ACTION = 0;
@@ -21,7 +21,7 @@ public class Lab4ViewPagerAdapter extends FragmentPagerAdapter {
     public static final String UI_TAB_HISTORY = "HISTORY";
     public static final String UI_TAB_SETTINGS = "SETTINGS";
 
-    public Lab4ViewPagerAdapter(FragmentManager fm, ArrayList<Fragment> fragments){
+    public Lab4TabsViewPagerAdapter(FragmentManager fm, ArrayList<Fragment> fragments){
         super(fm);
         this.fragments = fragments;
     }
