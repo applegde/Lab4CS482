@@ -36,7 +36,7 @@ public class Lab4TabsViewPagerAdapter extends FragmentPagerAdapter {
 
     public CharSequence getPageTitle(int position) {
         switch (position) {
-            case ACTION
+            case ACTION:
                 return UI_TAB_ACTION;
             case HISTORY:
                 return UI_TAB_HISTORY;
