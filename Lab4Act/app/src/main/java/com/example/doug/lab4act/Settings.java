@@ -70,7 +70,7 @@ public class Settings extends Fragment {
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.onFragmentInteractionSettings(uri);
         }
     }
 
@@ -103,7 +103,7 @@ public class Settings extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
+        public void onFragmentInteractionSettings(Uri uri);
     }
 
 }

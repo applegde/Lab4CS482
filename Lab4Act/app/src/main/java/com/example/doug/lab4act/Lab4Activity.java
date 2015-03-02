@@ -1,5 +1,6 @@
 package com.example.doug.lab4act;
 
+import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -9,7 +10,7 @@ import java.util.ArrayList;
 
 import com.example.doug.lab4act.view.SlidingTabLayout;
 
-public class Lab4Activity extends FragmentActivity {
+public class Lab4Activity extends FragmentActivity implements Settings.OnFragmentInteractionListener, Start.OnFragmentInteractionListener, History.OnFragmentInteractionListener{
     private SlidingTabLayout slidingTabLayout;
     private ViewPager viewPager;
     private ArrayList<Fragment> fragments;
@@ -40,5 +41,19 @@ public class Lab4Activity extends FragmentActivity {
         // make sure the tabs are equally spaced.
         slidingTabLayout.setDistributeEvenly(true);
         slidingTabLayout.setViewPager(viewPager);
+    }
+
+    //Implementing interfaces
+    public void onFragmentInteractionStart(Uri uri)
+    {
+
+    }
+    public void onFragmentInteractionSettings(Uri uri)
+    {
+
+    }
+    public void onFragmentInteractionHistory(Uri uri)
+    {
+
     }
 }
