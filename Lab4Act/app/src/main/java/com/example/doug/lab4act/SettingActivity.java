@@ -57,15 +57,8 @@ public class SettingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD
-<<<<<<< HEAD
-        setContentView(R.layout.SettingLayout);
-=======
-        setContentView(R.layout.activity_lab4);
->>>>>>> origin/master
-=======
-        setContentView(R.layout.activity_lab4);
->>>>>>> origin/master
+        setContentView(R.layout.settings_layout);
+
 
         // Restore preferences
         SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);

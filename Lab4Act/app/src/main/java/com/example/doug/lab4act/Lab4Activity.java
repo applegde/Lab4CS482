@@ -33,6 +33,13 @@ public class Lab4Activity extends ActionBarActivity {
         fragments.add(new History());
         fragments.add(new Settings());
 
+        //set things up with the sliding view
+        viewPagerAdapter =new Lab4TabsViewPagerAdapter(getFragmentManager(),
+                fragments);
+        viewPager.setAdapter(viewPagerAdapter);
+        slidingTabLayout.setDistributeEvenly(true);
+        slidingTabLayout.setViewPager(viewPager);
+
     }
 
 
