@@ -72,7 +72,7 @@ public class StartFragment extends Fragment {
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.onFragmentInteractionStart(uri);
         }
     }
 
@@ -86,17 +86,6 @@ public class StartFragment extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
 
-        Spinner input_spinner = (Spinner) getActivity().findViewById(R.id.input_spinner);
-        ArrayAdapter<CharSequence> input_adapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.input_types, android.R.layout.simple_spinner_item);
-        input_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        input_spinner.setAdapter(input_adapter);
-
-        Spinner activity_spinner = (Spinner) getActivity().findViewById(R.id.activity_spinner);
-        ArrayAdapter<CharSequence> activity_adapter = ArrayAdapter.createFromResource(getActivity(),
-                R.array.activity_types, android.R.layout.simple_spinner_item);
-        activity_adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        activity_spinner.setAdapter(input_adapter);
     }
 
     @Override
@@ -117,7 +106,7 @@ public class StartFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
+        public void onFragmentInteractionStart(Uri uri);
     }
 
 }

@@ -16,7 +16,7 @@
             android:id="@+id/input_spinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:entries="@string-array/input_types"/>
+            android:entries="@array/input_types"/>
 
         <TextView
             android:layout_width="fill_parent"
@@ -27,7 +27,7 @@
             android:id="@+id/activity_spinner"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:entries="@string-array/activity_types"/>
+            android:entries="@array/activity_types"/>
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
@@ -40,6 +40,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/sync_button"
+                android:onClick="onStart"
                 android:text="@string/start"/>
 
             <Button

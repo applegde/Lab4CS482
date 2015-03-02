@@ -3,7 +3,7 @@ package com.example.doug.lab4act;
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -72,7 +72,7 @@ public class SettingsFragment extends Fragment {
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
-            mListener.onFragmentInteractionStart(uri);
+            mListener.onFragmentInteractionSettings(uri);
         }
     }
 
@@ -105,7 +105,7 @@ public class SettingsFragment extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        public void onFragmentInteractionStart(Uri uri);
+        public void onFragmentInteractionSettings(Uri uri);
     }
 
 }
