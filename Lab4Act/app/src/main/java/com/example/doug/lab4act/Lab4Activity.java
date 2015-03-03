@@ -57,7 +57,7 @@ public class Lab4Activity extends ActionBarActivity implements SettingsFragment.
 
     public void onStart(View view)
     {
-        Intent intent = new Intent(this, MapActivity.class);
+        Intent intent = new Intent(this, ManualInputActivity.class);
         startActivity(intent);
     }
 
