@@ -33,6 +33,15 @@
             android:name=".MapActivity"
             android:label="@string/title_activity_map" >
         </activity>
+        <activity
+            android:name=".ManualInputActivity"
+            android:label="@string/manual_input_activity_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
