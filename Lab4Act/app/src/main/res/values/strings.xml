@@ -30,7 +30,19 @@
     <string name="activity_type">Activity Type:</string>
     <string name="start">Start</string>
     <string name="sync">Sync</string>
-
+    <string name="acc_pref">Account Preferences</string>
+    <string name="user_profile">User Profile</string>
+    <string name="up_hint">Names, Email,Class,etc</string>
+    <string name="privacy">Privacy Settings</string>
+    <string name="ps_hint">Posting your records anonymously</string>
+    <string name="add_setts">Additional Settings</string>
+    <string name="unit_pref">Unit Preference</string>
+    <string name="upref_hint">Select the units in which you would like to see distance values</string>
+    <string name="comment">Comment</string>
+    <string name="c_hint">Any suggestions to this course?</string>
+    <string name="misc">Misc.</string>
+    <string name="class_page">Class homepage</string>
+    <string name="c_website">http://www.cs.dartmouth.edu/~campbell</string>
 
     <string-array name="input_types">
         <item>Manual Entry</item>
