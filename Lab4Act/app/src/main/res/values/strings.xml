@@ -43,6 +43,14 @@
     <string name="misc">Misc.</string>
     <string name="class_page">Class homepage</string>
     <string name="c_website">http://www.cs.dartmouth.edu/~campbell</string>
+    <string name="date_text">Date</string>
+    <string name="manual_input_activity_title">Manual Input</string>
+    <string name="time_text">Time</string>
+    <string name="duration_text">Duration</string>
+    <string name="distance_text">Distance</string>
+    <string name="calories_text">Calories</string>
+    <string name="hr_text">Heart Rate</string>
+    <string name="comment_text">Comment</string>
 
     <string-array name="input_types">
         <item>Manual Entry</item>
